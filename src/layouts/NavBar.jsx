@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'gatsby';
 import styled from '@emotion/styled';
 import Headroom from 'react-headroom';
-import logo from '../../static/logo/header-logo.png';
+import logo from '../../public/logo/banner.png';
 
 const StyledLink = styled(Link)`
   display: flex;
@@ -34,8 +34,8 @@ const NavBar = () => (
     </StyledLink>
     <Nav>
       <Link to="/">Home</Link>
-      <Link to="/blog">Blog</Link>
       <Link to="/about">About</Link>
+      <Link to="/blog">Sign Up</Link>
     </Nav>
   </Headroom>
 );

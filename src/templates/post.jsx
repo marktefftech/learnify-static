@@ -5,6 +5,7 @@ import PropTypes from 'prop-types';
 import { Layout, Container, Content } from 'layouts';
 import { TagsBlock, Header, SEO } from 'components';
 import '../styles/prism';
+import '../../src/app.css'
 
 const SuggestionBar = styled.div`
   display: flex;
@@ -34,10 +35,12 @@ const Post = ({ data, pageContext }) => {
         pathname={path}
         article
       />
-      <Header title={title} date={date} cover={image} />
+      <Header title={title} date="100 Hour Course" cover={image} />
+      <a href='http://localhost:3000'>
+         <button className="signup-btn">Sign Up Now</button>
+      </a>
       <Container>
         <Content input={html} />
-        <TagsBlock list={tags || []} />
       </Container>
       <SuggestionBar>
         <PostSuggestion>

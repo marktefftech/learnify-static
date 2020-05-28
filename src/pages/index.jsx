@@ -25,7 +25,7 @@ const Index = ({ data }) => {
   return (
     <Layout>
       <Helmet title={'Home Page'} />
-      <Header title="Home Page">Gatsby Tutorial Starter</Header>
+      <Header title="Welcome to Learnify">Build skills with courses, certificates, and <br/>degrees online from world-class instructors</Header>
       <PostWrapper>
         {edges.map(({ node }) => {
           const { id, excerpt, frontmatter } = node;

@@ -10,15 +10,14 @@ const Blog = ({ data }) => {
   return (
     <Layout>
       <Helmet title={'Blog Page'} />
-      <Header title="Blog Page">Gatsby Tutorial Starter</Header>
+      <Header title="Let the journey begin"></Header>
       {edges.map(({ node }) => (
         <BlogList
           key={node.id}
           cover={node.frontmatter.cover.childImageSharp.fluid}
           path={node.frontmatter.path}
           title={node.frontmatter.title}
-          date={node.frontmatter.date}
-          tags={node.frontmatter.tags}
+          date="100 Hour Course"     
           excerpt={node.excerpt}
         />
       ))}

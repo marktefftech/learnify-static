@@ -1,0 +1,19 @@
+.signup-btn {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    background-color: blue;
+    color: white !important;
+    border-radius: 10px;
+    border: none;
+    padding: .5rem;
+}
+
+.signup-txt {
+    text-decoration: inherit;
+}
+
+.abt-txt {
+    text-align: left;
+}
